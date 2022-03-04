@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <header>CSS Documentation</header>
+        <ul class="nav-list">
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+            <li><a href="#Selector" class="nav-link">Selector</a></li>
+            <li><a href="#Declaration_Block" class="nav-link">Declaration Block</a></li>
+            <li><a href="#Length_Units" class="nav-link">Length Units</a></li>
+            <li><a href="#Use" class="nav-link">Use</a></li>
+            <li><a href="#Sources" class="nav-link">Sources</a></li>
+            <li><a href="#Specificity" class="nav-link">Specificity</a></li>
+            <li><a href="#Inheritance" class="nav-link">Inheritance</a></li>
+            <li><a href="#Whitespace" class="nav-link">Whitespace</a></li>
+            <li><a href="#History" class="nav-link">History</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc" class="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document
+                written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside
+                HTML and JavaScript.</p>
+            <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
+                This separation can improve content accessibility; provide more flexibility and control in the specification
+                of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant
+                CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable
+                the .css file to be cached to improve the page load speed between the pages that share the file and its
+                formatting.</p>
+        </section>
+    
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>CSS has a simple syntax and uses a number of English keywords to specify the names of various style
+                properties.</p>
+            <p>A style sheet consists of a list of rules. Each rule or rule-set consists of one or more selectors, and a
+                declaration block.</p>
+        </section>
+    
+        <section class="main-section" id="Selector">
+            <header>Selector</header>
+            <p>In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the
+                markup itself.</p>
+            <p>Selectors may apply to the following:</0>
+            <ul class="main-list">
+                <li>all elements of a specific type, e.g. the second-level headers <code>h2</code></li>
+                <li>elements specified by attribute, in particular:</li>
+                <ul class="sub-main-list">
+                    <li><i>id:</i> an identifier unique within the document, identified with a hash prefix e.g.
+                        <code>#id</code></li>
+                    <li><i>id:</i> an identifier unique within the document, identified with a hash prefix e.g.
+                        <code>#id</code></li>
+                    <li><i>class:</i> an identifier that can annotate multiple elements in a document, identified with a
+                        period prefix e.g. <code>.classname</code></li>
+                </ul>
+            </ul>
+            <p>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and
+                underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a
+                single element.</p>
+            <p>Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in
+                the document tree. One example of a widely used pseudo-class is <code>:hover</code>, which identifies
+                content only when the user "points to" the visible element, usually by holding the mouse cursor over it. It
+                is appended to a selector as in <code>a:hover</code> or <code>#elementid:hover</code>. A pseudo-class
+                classifies document elements, such as <code>:link</code> or <code>:visited</code>, whereas a pseudo-element
+                makes a selection that may consist of partial elements, such as <code>::first-line</code> or
+                <code>::first-letter</code>.</p>
+        </section>
+    
+        <section class="main-section" id="Declaration_Block">
+            <header>Declaration Block</header>
+            <p>A declaration block consists of a list of declarations in braces. Each declaration itself consists of a
+                property, a colon (<code>:</code>), and a value. If there are multiple declarations in a block, a semi-colon
+                (<code>;</code>) must be inserted to separate each declaration. An optional semi-colon after the last (or
+                single) declaration may be used.</p>
+        </section>
+    
+        <section class="main-section" id="Length_Units">
+            <header>Length Units</header>
+            <p>Non-zero numeric values representing linear measures must include a length unit, which is either an
+                alphabetic code or abbreviation, as in <code>200px</code> or <code>50vw</code>; or a percentage sign, as in
+                <code>80%</code>. Some units – <code>cm</code> (centimetre); <code>in</code> (inch); <code>mm</code>
+                (millimetre); <code>pc</code> (pica); and <code>pt</code> (point) – are absolute, which means that the
+                rendered dimension does not depend upon the structure of the page; others – <code>em</code> (em);
+                <code>ex</code> (ex) and <code>px</code> (pixel) – are relative, which means that factors such as the font
+                size of a parent element can affect the rendered measurement. These eight units were a feature of CSS 1 and
+                retained in all subsequent revisions. The proposed CSS Values and Units Module Level 3 will, if adopted as a
+                W3C Recommendation, provide seven further length units: <code>ch</code>; <code>Q</code>; <code>rem</code>;
+                <code>vh</code>; <code>vmax</code>; <code>vmin</code>; and <code>vw</code>.</p>
+        </section>
+    
+        <section class="main-section" id="Use">
+            <header>Use</header>
+            <p>Before CSS, nearly all presentational attributes of HTML documents were contained within the HTML markup. All
+                font colors, background styles, element alignments, borders and sizes had to be explicitly described, often
+                repeatedly, within the HTML. CSS lets authors move much of that information to another file, the style
+                sheet, resulting in considerably simpler HTML.</p>
+        </section>
+    
+        <section class="main-section" id="Sources">
+            <header>Sources</header>
+            <p>CSS information can be provided from various sources. These sources can be the web browser, the user, and the
+                author. The information from the author can be further classified into inline, media type, importance,
+                selector specificity, rule order, inheritance, and property definition. CSS style information can be in a
+                separate document, or it can be embedded into an HTML document. Multiple style sheets can be imported.
+                Different styles can be applied depending on the output device being used; for example, the screen version
+                can be quite different from the printed version, so that authors can tailor the presentation appropriately
+                for each medium.</p>
+        </section>
+    
+        <section class="main-section" id="Specificity">
+            <header>Specificity</header>
+            <p>Specificity refers to the relative weights of various rules.[16] It determines which styles apply to an
+                element when more than one rule could apply. Based on specification, a simple selector (e.g. H1) has a
+                specificity of 1, class selectors have a specificity of 1,0, and ID selectors a specificity of 1,0,0.
+                Because the specificity values do not carry over as in the decimal system, commas are used to separate the
+                "digits"[17] (a CSS rule having 11 elements and 11 classes would have a specificity of 11,11, not 121).</p>
+            <table>
+                <caption>Thus the following rules selectors result in the indicated specificity:</caption>
+                <thead>
+                    <tr>
+                        <th>Selectors</th>
+                        <th>Specificity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>h1 {color: white;}</code></td>
+                        <td>0, 0, 0, 1</td>
+                    </tr>
+                    <tr>
+                        <td><code>p em {color: green;}</code></td>
+                        <td>0, 0, 0, 2</td>
+                    </tr>
+                    <tr>
+                        <td><code>.grape {color: red;}</code></td>
+                        <td>0, 0, 1, 0</td>
+                    </tr>
+                    <tr>
+                        <td><code>p.bright {color: blue;}</code></td>
+                        <td>0, 0, 1, 1</td>
+                    </tr>
+                    <tr>
+                        <td><code>p.bright em.dark {color: yellow;}	</code></td>
+                        <td>0, 0, 2, 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>#id218 {color: brown;}</code></td>
+                        <td>0, 1, 0, 0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>style=" "</code></td>
+                        <td>1, 0, 0, 0
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <section class="main-section" id="Inheritance">
+            <header>Inheritance</header>
+            <p>Inheritance is a key feature in CSS; it relies on the ancestor-descendant relationship to operate.
+                Inheritance is the mechanism by which properties are applied not only to a specified element, but also to
+                its descendants. Inheritance relies on the document tree, which is the hierarchy of XHTML elements in a page
+                based on nesting. Descendant elements may inherit CSS property values from any ancestor element enclosing
+                them. In general, descendant elements inherit text-related properties, but their box-related properties are
+                not inherited. Properties that can be inherited are color, font, letter-spacing, line-height, list-style,
+                text-align, text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be
+                inherited are background, border, display, float and clear, height, and width, margin, min- and max-height
+                and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.</p>
+            <p>Given the following style sheet:</p>
+            <pre>
+          <code>
+    h1 {
+      color: pink;
+    }
+    
+    p {
+      color: red;
+      text-align: center;
+    }
+          </code>
+        </pre>
+        </section>
+    
+        <section class="main-section" id="Whitespace">
+            <header>Whitespace</header>
+            <p>Whitespace between properties and selectors is ignored. This code snippet:</p>
+            <code class="code-box">  body{overflow:hidden;background:#000000;background-image:url(images/bg.gif);background-repeat:no-repeat;background-position:left top;}
+          </code>
+            <p>is functionally equivalent to this one:</p>
+            <pre>
+          <code>
+    body {
+       overflow: hidden;
+       background-color: #000000;
+       background-image: url(images/bg.gif);
+       background-repeat: no-repeat;
+       background-position: left top;
+    }
+          </code>
+        </pre>
+        </section>
+    
+        <section class="main-section" id="History">
+            <header>History</header>
+            <p>CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim
+                Berners-Lee at CERN. Several other style sheet languages for the web were proposed around the same time, and
+                discussions on public mailing lists and inside World Wide Web Consortium resulted in the first W3C CSS
+                Recommendation (CSS1) being released in 1996. In particular, a proposal by Bert Bos was influential; he
+                became co-author of CSS1, and is regarded as co-creator of CSS.</p>
+            <p>Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language
+                (SGML) in the 1980s, and CSS was developed to provide style sheets for the web. One requirement for a web
+                style sheet language was for style sheets to come from different sources on the web. Therefore, existing
+                style sheet languages like DSSSL and FOSI were not suitable. CSS, on the other hand, let a document's style
+                be influenced by multiple style sheets by way of "cascading" styles.</p>
+        </section>
+    </main>
+</body>
+</html>
