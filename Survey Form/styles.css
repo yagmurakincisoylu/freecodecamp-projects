@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    background: #1382AB url("//unsplash.it/1500");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    margin: 4em 1em 1em;
+    color: #eb9f4b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+}
+
+#title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#description {
+    font-style: italic;
+    padding: 1.3em;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2.5em;
+    background-color: rgba(2, 48, 71, .93);
+    color: #fefae0;
+    font-size: 1.25rem;
+    width: 40%;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+
+#survey-form > div {
+    margin-bottom: 1.2em;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#free-time,
+#suggest,
+#submit {
+    width: 100%;
+    padding: .6em;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+[placeholder],
+select {
+    font-size: 1rem;
+    color: #495057;
+}
+
+#submit {
+    padding: .8em 2em;
+    background-color: #5fb04f;
+    box-shadow: unset;
+    border: unset;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#submit:hover,
+#submit:focus {
+    background-color: #eb9f4b;
+}
+
+
+@media (max-width: 1450px) {
+    .container {
+        width: 60%;
+    }
+
+    #title {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+    
+    #title {
+        font-size: 2rem;
+    }
+
+    #description {
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #description {
+        font-size: .8rem;
+    }
+
+    .form {
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    [placeholder],
+        select {
+        font-size: .8rem;
+    }
+}
+
+
+
+
+
+
+
+
