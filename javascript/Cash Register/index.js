@@ -66,8 +66,6 @@ function checkCashRegister(price, cash, cid) {
             };
             return returnedObj;
           } else {
-            console.log("za")
-
             returnedObj = {
               status: "OPEN",
               change: changeArray
@@ -92,7 +90,6 @@ function checkCashRegister(price, cash, cid) {
           };
           return returnedObj;
         } else {
-          console.log("za")
           let newChange = (change - cid[i][1]).toFixed(2);
           changeArray.push(cid[i])
           cid.splice(i, 1);
