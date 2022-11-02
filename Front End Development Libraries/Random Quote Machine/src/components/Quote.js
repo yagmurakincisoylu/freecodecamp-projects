@@ -10,10 +10,11 @@ function Quote() {
     fetch("https://api.quotable.io/random?maxLength=50")
       .then(res => res.json())
       .then(data => {
-
-        setQuote({text: data.content, author: data.author})
-      });
+        setQuote({text: data.content, author: data.author});
+      })
   }
+
+  let link = 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent('"' + quote.text + '" ' + quote.author);
 
   let colorsArr = [
     "#147562",
@@ -67,7 +68,7 @@ function Quote() {
       </div>
 
       <div id="link-container">
-        <a href="twitter.com/intent/tweet" target="_top" id="tweet-quote">
+        <a href={link} target="_top" id="tweet-quote">
           <i className="fa-brands fa-twitter"></i>
         </a>
         <button id="new-quote" onClick={getNewQuote}>New Quote</button>
