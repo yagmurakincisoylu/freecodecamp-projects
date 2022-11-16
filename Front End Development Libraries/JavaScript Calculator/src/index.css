@@ -1,0 +1,145 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-primary-clr: #151717;
+  --dark-secondary-clr: #202424;
+
+  --light-primary-clr: #ebf7f7;
+  --light-secondary-clr: #e2eeee;
+
+  --symbol-clr1: #23aaaa;
+  --symbol-clr2: #e74f4f;
+
+  --border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  background-color: #555555;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+/* Light-Mode */
+
+.light#calculator-container {
+  background-color: var(--light-primary-clr);
+  color: var(--dark-primary-clr);
+}
+
+.light > #button-container {
+  background-color: var(--light-secondary-clr);
+}
+
+.light button {
+  border: 5px solid var(--light-secondary-clr);
+  background-color: var(--light-primary-clr);
+}
+
+.light i {
+  color: var(--dark-primary-clr);
+}
+
+/* Dark-Mode (default) */
+
+#calculator-container {
+  background-color: var(--dark-primary-clr);
+  color: var(--light-secondary-clr);
+  width: 330px;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  letter-spacing: 2px;
+}
+
+#display-container {
+  text-align: right;
+  padding: 30px 20px;
+}
+
+#display {
+  font-size: 3.5rem;
+  height: 71px;
+}
+
+#output {
+  font-size: 1.1rem;
+  color: var(--symbol-clr2);
+  margin-bottom: 5px;
+  height: 22px;
+}
+
+i {
+  cursor: pointer;
+  margin-bottom: 35px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+i:hover {
+  opacity: .85;
+}
+
+#button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(5, 70px);
+  border-radius: var(--border-radius);
+  background-color: var(--dark-secondary-clr);
+  padding: 10px;
+}
+
+#clear,
+#zero {
+  grid-column: 1 / span 2;
+  grid-row: span 1;
+}
+
+#equals {
+  grid-row: 4 / 6;
+  grid-column: 4 / 5;
+}
+
+#clear,
+#divide,
+#multiply {
+  color: var(--symbol-clr1)
+}
+
+#subtract,
+#add,
+#equals {
+  color: var(--symbol-clr2)
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: inherit;
+  border-radius: var(--border-radius);
+  border: 5px solid var(--dark-secondary-clr);
+  cursor: pointer;
+  background-color: var(--dark-primary-clr);
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+
