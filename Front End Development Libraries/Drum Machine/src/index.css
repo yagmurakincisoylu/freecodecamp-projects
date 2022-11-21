@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fa7bab;
+  color: #493c5e;
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  line-height: 1.5;
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-variant-caps: small-caps;
+  letter-spacing: 1.5px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+#drum-machine {
+  background-color: #9ca6c0;
+  border-radius: 20px;
+  padding: 2em;
+  border: 4px solid #493c5e;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, .25);
+  text-align: center;
+}
+
+#display {
+  height: 75px;
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+}
+
+.drum-pads-container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+  padding: 1em;
+}
+
+.drum-pad {
+  padding: .8em 1.5em;
+  border-radius: 20px;
+  border: 3px solid #493c5e;
+  font-size: 1.5rem;
+  background-color: #fefefe;
+}
+
+.drum-pad:active {
+  transform: scale(.95);
+  background-color: #ffb22b;
+}
