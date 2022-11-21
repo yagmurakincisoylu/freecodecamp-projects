@@ -25,10 +25,6 @@ function App() {
     <div id="drum-machine">
       <h1>Drum Machine <i className="fa-solid fa-drum"></i></h1>
       <div id="display">{displayText}</div>
-      <div className="volume-container">
-        <p>Volume</p>
-        <input type="range" />
-      </div>
       <div className="drum-pads-container">
         {buttonElements}
       </div>
