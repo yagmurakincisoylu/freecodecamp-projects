@@ -1,0 +1,97 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #c2eaf2;
+  color: #e9e9e9;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  margin-inline: 10px;
+  font: inherit;
+  color: inherit;
+  border: none;
+  font-size: 1.15rem;
+  background-color: transparent;
+}
+
+button:hover {
+  opacity: .9;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-container,
+.bottom-container {
+  background-color: #4b94ac;
+  width: 500px;
+  padding: 1em;
+  color: #123849;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.title {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.title span {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.title input {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.mid-container {
+  width: 600px;
+  height: 200px;
+  background-color: #123849;
+  display: grid;
+  place-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+#timer-label {
+  font-size: 2.5rem;
+}
+
+#time-left {
+  font-size: 5rem;
+  width: 500px;
+}
